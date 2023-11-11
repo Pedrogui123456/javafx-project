@@ -3,26 +3,26 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import java.net.*?>
+
 
 
 <VBox alignment="CENTER_LEFT" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-fx:controller="com.example.javafxproject.CadastroClienteController">
+fx:controller="com.example.javafxproject.CadastroFuncionarioController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
     <VBox alignment="CENTER" spacing="10.0">
-        <Label text="Bem-vindo(a) a plataforma de gerenciamento comercial do IFSP" styleClass="formTitle" />
+        <Label text="Bem-vindo(a) a plataforma de gerenciamento comercial do IFSP" styleClass=".formTitle"  />
         <Label text="Para o seu novo acesso, precisaremos de algumas informações suas" styleClass="SubTitulolbl" />
     </VBox>
 
 
+    <Label text="Email:" styleClass="labelField" />
+    <TextField fx:id="txfEmail" />
+
     <Label text="Nome:" styleClass="labelField" />
     <TextField fx:id="txfNome" />
-
-    <Label text="E-mail:" styleClass="labelField" />
-    <TextField fx:id="txfEmail" />
 
     <Label text="Senha:" styleClass="labelField" />
     <TextField fx:id="txfSenha" />
@@ -32,11 +32,4 @@ fx:controller="com.example.javafxproject.CadastroClienteController">
         <Button text="Cadastrar" onAction="#onActionCadastrar" />
     </VBox>
 
-    <stylesheets>
-        <URL value="@style.css" />
-    </stylesheets>
-
-
 </VBox>
-
-

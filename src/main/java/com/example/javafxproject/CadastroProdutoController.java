@@ -3,23 +3,23 @@ package com.example.javafxproject;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
-public class CadastroClienteController {
+public class CadastroProdutoController {
     @FXML
     private TextField txfNome;
     @FXML
-    private TextField txfEmail;
+    private TextField txfPreco;
     @FXML
-    private TextField txfSenha;
+    private TextField txfCategoria;
 
     public void onActionCadastrar() {
         String nome = txfNome.getText();
-        String email = txfEmail.getText();
-        String senha = txfSenha.getText();
+        String preco = txfPreco.getText();
+        String categoria = txfCategoria.getText();
 
 
         System.out.println(nome);
-        System.out.println(email);
-        System.out.println(senha);
+        System.out.println(preco);
+        System.out.println(categoria);
  
     }
     

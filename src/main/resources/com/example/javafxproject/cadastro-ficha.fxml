@@ -7,27 +7,24 @@
 
 
 <VBox alignment="CENTER_LEFT" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-fx:controller="com.example.javafxproject.CadastroClienteController">
+fx:controller="com.example.javafxproject.CadastroFichaController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
     <VBox alignment="CENTER" spacing="10.0">
         <Label text="Bem-vindo(a) a plataforma de gerenciamento comercial do IFSP" styleClass="formTitle" />
-        <Label text="Para o seu novo acesso, precisaremos de algumas informações suas" styleClass="SubTitulolbl" />
+        <Label text="Cadastre a ficha de seu cliente de acordo com os dados abaixo :" styleClass="SubTitulolbl" />
     </VBox>
 
 
-    <Label text="Nome:" styleClass="labelField" />
-    <TextField fx:id="txfNome" />
+    <Label text="Quantidade:" styleClass="labelField" />
+    <TextField fx:id="txfQuantidade" />
 
-    <Label text="E-mail:" styleClass="labelField" />
-    <TextField fx:id="txfEmail" />
+    <Label text="Data de comrpa:" styleClass="labelField" />
+    <TextField fx:id="txfData" />
 
-    <Label text="Senha:" styleClass="labelField" />
-    <TextField fx:id="txfSenha" />
-
-
+ 
     <VBox alignment="CENTER_RIGHT" spacing="20.0">
         <Button text="Cadastrar" onAction="#onActionCadastrar" />
     </VBox>
@@ -38,5 +35,3 @@ fx:controller="com.example.javafxproject.CadastroClienteController">
 
 
 </VBox>
-
-
