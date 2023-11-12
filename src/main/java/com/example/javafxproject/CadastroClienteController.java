@@ -10,6 +10,7 @@ public class CadastroClienteController {
     private TextField txfEmail;
     @FXML
     private TextField txfSenha;
+    
 
     public void onActionCadastrar() {
         String nome = txfNome.getText();

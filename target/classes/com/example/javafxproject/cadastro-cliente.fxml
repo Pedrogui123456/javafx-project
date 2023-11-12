@@ -14,7 +14,7 @@ fx:controller="com.example.javafxproject.CadastroClienteController">
 
     <VBox alignment="CENTER" spacing="10.0">
         <Label text="Bem-vindo(a) a plataforma de gerenciamento comercial do IFSP" styleClass="formTitle" />
-        <Label text="Para o seu novo acesso, precisaremos de algumas informações suas" styleClass="SubTitulolbl" />
+        <Label text="Para o seu novo acesso, precisaremos de algumas informações suas:"  />
     </VBox>
 
 
@@ -27,9 +27,11 @@ fx:controller="com.example.javafxproject.CadastroClienteController">
     <Label text="Senha:" styleClass="labelField" />
     <TextField fx:id="txfSenha" />
 
+    
+
 
     <VBox alignment="CENTER_RIGHT" spacing="20.0">
-        <Button text="Cadastrar" onAction="#onActionCadastrar" />
+        <Button text="Cadastrar" onAction="#onActionCadastrar" styleClass="button" />
     </VBox>
 
     <stylesheets>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<VBox alignment="CENTER_LEFT" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.javafxproject.CardapioController">
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <VBox alignment="CENTER" spacing="10.0">
+        <Label text="Bem-vindo(a) ao nosso cardápio" styleClass="formTitle" />
+        <Label text="Escolha seus itens do cardápio:"  />
+    </VBox>
+
+    <ListView fx:id="listViewCardapio" />
+
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+
+</VBox>
+

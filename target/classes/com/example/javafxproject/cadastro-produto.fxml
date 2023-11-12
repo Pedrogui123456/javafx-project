@@ -3,7 +3,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-
+<?import java.net.*?>
 
 
 <VBox alignment="CENTER_LEFT" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
@@ -14,7 +14,7 @@ fx:controller="com.example.javafxproject.CadastroProdutoController">
 
     <VBox alignment="CENTER" spacing="10.0">
         <Label text="Bem-vindo(a) a plataforma de gerenciamento comercial do IFSP" styleClass="formTitle"  />
-        <Label text="Para cadastrar o produto, preencha o formulário abaixo:" styleClass="SubTitulolbl" />
+        <Label text="Para cadastrar o produto, preencha o formulário abaixo:"  />
     </VBox>
 
 
@@ -31,6 +31,12 @@ fx:controller="com.example.javafxproject.CadastroProdutoController">
     <VBox alignment="CENTER_RIGHT" spacing="20.0">
         <Button text="Cadastrar" onAction="#onActionCadastrar" />
     </VBox>
+
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+
+
 
 
 

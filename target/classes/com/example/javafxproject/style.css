@@ -1,31 +1,28 @@
 VBox {
     -fx-padding: 30px;
-    .button { -fx-background-color: #7b68ee  }
   }
   
   Label {
     -fx-font-size: 13px;
     -fx-font-weight: bold;
   }
-  
- 
 
-  TextField {
-    -fx-font-size: 15px;
-    -fx-padding: 10px;
-   
-  }
+  
   
   .formTitle {
     -fx-font-size: 20px;
     -fx-font-weight: bold;
   }
 
-  .SubTitulolbl {
-    -fx-font-size: 20px;
-  }
   
   .labelField {
     -fx-font-weight: bold;
   }
-  
+
+  #mainScene {
+    -fx-background-color: #f4f4f4;
+}
+
+.button {
+  -fx-font-size: 14px;
+}

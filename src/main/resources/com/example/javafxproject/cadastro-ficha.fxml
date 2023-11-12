@@ -14,7 +14,7 @@ fx:controller="com.example.javafxproject.CadastroFichaController">
 
     <VBox alignment="CENTER" spacing="10.0">
         <Label text="Bem-vindo(a) a plataforma de gerenciamento comercial do IFSP" styleClass="formTitle" />
-        <Label text="Cadastre a ficha de seu cliente de acordo com os dados abaixo :" styleClass="SubTitulolbl" />
+        <Label text="Cadastre a ficha de seu cliente de acordo com os dados abaixo :"  />
     </VBox>
 
 
