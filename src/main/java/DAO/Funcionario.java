@@ -1,4 +1,4 @@
-/*package DAO;
+package DAO;
 
 public class Funcionario {
     private Integer id;
@@ -56,4 +56,4 @@ public class Funcionario {
         return "Funcionario [id=" + id + ", nome=" + nome + ", email=" + email + "]";
     }
 
-}*/
+}

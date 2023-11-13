@@ -1,4 +1,4 @@
-/*package DAO;  
+package DAO;  
 
 import java.sql.SQLException
 
@@ -17,7 +17,7 @@ public class Principal {
         System.out.println(ClienteDao.findById(2));
     }
     
-}*/
+}
 
 
 

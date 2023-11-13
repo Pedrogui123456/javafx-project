@@ -1,4 +1,4 @@
-/*package DAO;
+package DAO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+
 
 public class ClienteDAO {
     public Cliente create(Cliente cliente) throws SQLException {
@@ -125,4 +126,4 @@ public class ClienteDAO {
             rs.getString("senha")
         );
     }
-}*/
+}
