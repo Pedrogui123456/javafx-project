@@ -1,7 +1,6 @@
 package com.example.javafxproject;
 
 
-
 import com.example.javafxproject.DAO.Cliente;
 import com.example.javafxproject.DAO.ClienteDAO;
 

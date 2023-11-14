@@ -3,17 +3,17 @@ package com.example.javafxproject.DAO;
 public class Produto {
     private Integer id;
     private String nome;
-    private double preco;
+    private String preco; 
     private String categoria;
 
-    public Produto(Integer id, String nome, double preco, String categoria) {
+    public Produto(Integer id, String nome, String preco, String categoria) {
         this.id = id;
         this.nome = nome;
         this.preco = preco;
         this.categoria = categoria;
     }
 
-    public Produto(String nome, double preco, String categoria) {
+    public Produto(String nome, String preco, String categoria) {
         this.nome = nome;
         this.preco = preco;
         this.categoria = categoria;
@@ -35,11 +35,11 @@ public class Produto {
         this.nome = nome;
     }
 
-    public double getPreco() {
+    public String getPreco() { 
         return preco;
     }
 
-    public void setPreco(double preco) {
+    public void setPreco(String preco) { 
         this.preco = preco;
     }
 

@@ -9,9 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-
 public class ProdutoDAO {
-    public Produto create(String nome, double preco, String categoria) {
+    public Produto cadastrar(String nome, String preco, String categoria) {
         Produto produto = null;
         String sql = "INSERT INTO produtos (nome, preco, categoria) VALUES (?, ?, ?);";
 
@@ -21,7 +20,7 @@ public class ProdutoDAO {
                 .prepareStatement(sql, PreparedStatement.RETURN_GENERATED_KEYS);
         ) {
             statement.setString(1, nome);
-            statement.setDouble(2, preco);
+            statement.setString(2, preco);
             statement.setString(3, categoria);
             statement.executeUpdate();
 
@@ -40,7 +39,7 @@ public class ProdutoDAO {
         }
     }
 
-    public List<Produto> findAll() {
+    public List<Produto> listarTodos() {
         String sql = "SELECT * FROM produtos;";
         List<Produto> produtos = new ArrayList<>();
 
@@ -54,7 +53,7 @@ public class ProdutoDAO {
                     new Produto(
                         rs.getInt("id"), 
                         rs.getString("nome"), 
-                        rs.getDouble("preco"), 
+                        rs.getString("preco"), 
                         rs.getString("categoria")
                     )
                 );
@@ -67,7 +66,7 @@ public class ProdutoDAO {
         return produtos;
     }
 
-    public Produto findById(Integer id) {
+    public Produto buscarPorId(Integer id) {
         String sql = "SELECT * FROM produtos WHERE id = ?;";
 
         try (
@@ -81,7 +80,7 @@ public class ProdutoDAO {
                 return new Produto(
                     rs.getInt("id"),
                     rs.getString("nome"),
-                    rs.getDouble("preco"),
+                    rs.getString("preco"),
                     rs.getString("categoria")
                 );
             }
@@ -96,4 +95,3 @@ public class ProdutoDAO {
         return null;
     }
 }
-
