@@ -5,34 +5,29 @@
 <?import javafx.scene.layout.*?>
 <?import java.net.*?>
 
-
 <VBox alignment="CENTER_LEFT" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-fx:controller="com.example.javafxproject.CadastroFichaController">
+      fx:controller="com.example.javafxproject.MudancaPrecoController">
+
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
     <VBox alignment="CENTER" spacing="10.0">
         <Label text="Bem-vindo(a) a plataforma de gerenciamento comercial do IFSP" styleClass="formTitle" />
-        <Label text="Cadastre a ficha de seu cliente de acordo com os dados abaixo :"  />
+        <Label text="Mudança de Preço:"  />
     </VBox>
 
+    <Label text="Nome do Produto" styleClass="labelField" />
+    <TextField fx:id="txfNomeProduto" />
 
-    <Label text="Quantidade:" styleClass="labelField" />
-    <TextField fx:id="txfQuantidade" />
-
-    <Label text="Data de comrpa:" styleClass="labelField" />
-    <TextField fx:id="txfData" />
-
-
+    <Label text="Novo Preço:" styleClass="labelField" />
+    <TextField fx:id="txfNovoPreco" />
 
     <VBox alignment="CENTER_RIGHT" spacing="20.0">
-        <Button text="Cadastrar" onAction="#onActionCadastrar" />
+        <Button text="Aplicar Mudança" onAction="#onActionAplicarMudanca" styleClass="button" />
     </VBox>
 
     <stylesheets>
         <URL value="@style.css" />
     </stylesheets>
-
-
 </VBox>
