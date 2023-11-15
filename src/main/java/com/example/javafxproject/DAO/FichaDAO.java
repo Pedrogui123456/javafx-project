@@ -7,25 +7,27 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import java.sql.Date;
+
+
+
 
 public class FichaDAO {
-    public Ficha create(Date dataDaCompra, int quantidade) {
+    public Ficha create(String data, String quantidade) {
         Ficha ficha = null;
-        String sql = "INSERT INTO ficha (data_da_compra, quantidade) VALUES (?, ?);";
+        String sql = "INSERT INTO ficha (data, quantidade) VALUES (?, ?);";
 
         try (
             Connection connection = Conexao.getConnection();
             PreparedStatement statement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
         ) {
-            statement.setDate(1, dataDaCompra);
-            statement.setInt(2, quantidade);
+            statement.setString(1, data);
+            statement.setString(2, quantidade);
             statement.executeUpdate();
 
             ResultSet rs = statement.getGeneratedKeys();
 
             if (rs.next()) {
-                ficha = new Ficha(rs.getInt(1), dataDaCompra, quantidade);
+                ficha = new Ficha(rs.getInt(1), data, quantidade);
             }
 
             rs.close();
@@ -46,7 +48,7 @@ public class FichaDAO {
             ResultSet rs = statement.executeQuery(sql);
         ) {
             while (rs.next()) {
-                fichas.add(new Ficha(rs.getInt("id"), rs.getDate("data_da_compra"), rs.getInt("quantidade")));
+                fichas.add(new Ficha(rs.getInt("id"), rs.getDate("data_da_compra").toString(), String.valueOf(rs.getInt("quantidade"))));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -67,7 +69,7 @@ public class FichaDAO {
             ResultSet rs = statement.executeQuery();
 
             if (rs.next()) {
-                ficha = new Ficha(rs.getInt("id"), rs.getDate("data_da_compra"), rs.getInt("quantidade"));
+                ficha = new Ficha(rs.getInt("id"), rs.getDate("data_da_compra").toString(), String.valueOf(rs.getInt("quantidade")));
             }
 
             rs.close();

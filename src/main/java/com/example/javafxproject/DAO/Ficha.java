@@ -6,7 +6,7 @@ public class Ficha {
     private String dataDaCompra;
     private String quantidade;
 
-    public Ficha(Integer  id, Date dataDaCompra, int quantidade) {
+    public Ficha(Integer  id, String dataDaCompra, String quantidade) {
         this.id = id;
         this.dataDaCompra = dataDaCompra;
         this.quantidade = quantidade;
@@ -20,19 +20,19 @@ public class Ficha {
         this.id = id;
     }
 
-    public Date getDataDaCompra() {
+    public String getDataDaCompra() {
         return dataDaCompra;
     }
 
-    public void setDataDaCompra(Date dataDaCompra) {
+    public void setDataDaCompra(String dataDaCompra) {
         this.dataDaCompra = dataDaCompra;
     }
 
-    public int getQuantidade() {
+    public String getQuantidade() {
         return quantidade;
     }
 
-    public void setQuantidade(int quantidade) {
+    public void setQuantidade(String quantidade) {
         this.quantidade = quantidade;
     }
 

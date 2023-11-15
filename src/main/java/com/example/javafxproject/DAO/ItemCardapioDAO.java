@@ -12,6 +12,8 @@ import java.util.List;
 
 public class ItemCardapioDAO {
 
+    public ItemCardapio create;
+
     public ItemCardapio create(String nome, double preco) {
         ItemCardapio itemCardapio = null;
         String sql = "INSERT INTO cardapio (nome, preco) VALUES (?, ?);";

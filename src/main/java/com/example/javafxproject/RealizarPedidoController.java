@@ -12,6 +12,10 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import java.util.ArrayList;
 import java.util.List;
 
+
+import com.example.javafxproject.DAO.ItemPedido;
+import com.example.javafxproject.DAO.ItemPedidoDAO;
+
 public class RealizarPedidoController {
 
     @FXML
@@ -92,4 +96,11 @@ public class RealizarPedidoController {
             return preco.get() * quantidade.get();
         }
     }
+
+        ItemPedidoDAO itempedidoDao = new ItemPedidoDAO();
+        ItemPedido itempedido = itempedidoDao.cadastrarItemPedido(colProduto, colPreco, colQuantidade);
+
+        
+
+
 }

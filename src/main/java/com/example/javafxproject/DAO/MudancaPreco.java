@@ -2,19 +2,19 @@ package com.example.javafxproject.DAO;
 
 public class MudancaPreco {
     private int id;
-    private int idProduto;
-    private double novoPreco;
+    private String nome;
+    private String novoPreco;
 
     // Construtor para criar uma nova mudança de preço (usado ao recuperar dados do banco de dados)
-    public MudancaPreco(int id, int idProduto, double novoPreco) {
+    public MudancaPreco(int id, String nome, String novoPreco) {
         this.id = id;
-        this.idProduto = idProduto;
+        this.nome = nome;
         this.novoPreco = novoPreco;
     }
 
     // Construtor para criar uma nova mudança de preço (usado ao inserir dados no banco de dados)
-    public MudancaPreco(int idProduto, double novoPreco) {
-        this.idProduto = idProduto;
+    public MudancaPreco(String nome, String novoPreco) {
+        this.nome = nome;
         this.novoPreco = novoPreco;
     }
 
@@ -23,11 +23,11 @@ public class MudancaPreco {
         return id;
     }
 
-    public int getIdProduto() {
-        return idProduto;
+    public String getNome() {
+        return nome;
     }
 
-    public double getNovoPreco() {
+    public String getNovoPreco() {
         return novoPreco;
     }
 
@@ -35,11 +35,11 @@ public class MudancaPreco {
         this.id = id;
     }
 
-    public void setIdProduto(int idProduto) {
-        this.idProduto = idProduto;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public void setNovoPreco(double novoPreco) {
+    public void setNovoPreco(String novoPreco) {
         this.novoPreco = novoPreco;
     }
 
@@ -47,7 +47,7 @@ public class MudancaPreco {
     public String toString() {
         return "MudancaPreco{" +
                 "id=" + id +
-                ", idProduto=" + idProduto +
+                ", nome=" + nome +
                 ", novoPreco=" + novoPreco +
                 '}';
     }

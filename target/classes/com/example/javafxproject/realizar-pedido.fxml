@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<VBox alignment="CENTER_LEFT" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.javafxproject.RealizarPedidoController">
+
+    
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <VBox alignment="CENTER" spacing="10.0">
+        <Label text="Bem-vindo(a) à nossa lanchonete!" styleClass="formTitle" />
+        <Label text="Faça seu pedido:"  />
+    </VBox>
+
+    <!-- Área para selecionar produtos -->
+    <HBox spacing="10.0">
+        <Label text="Selecione um produto:" />
+        <ChoiceBox fx:id="choiceBoxProdutos" />
+        <Button text="Adicionar ao Pedido" onAction="#onActionAdicionarAoPedido" />
+    </HBox>
+
+    <!-- Tabela para exibir itens do pedido -->
+    <TableView fx:id="tableViewPedido">
+        <columns>
+            <TableColumn text="Produto" fx:id="colProduto" />
+            <TableColumn text="Preço" fx:id="colPreco" />
+            <TableColumn text="Quantidade" fx:id="colQuantidade" />
+            <TableColumn text="Total" fx:id="colTotal" />
+        </columns>
+    </TableView>
+
+    <VBox alignment="CENTER_RIGHT" spacing="20.0">
+        <Button text="Finalizar Pedido" onAction="#onActionFinalizarPedido" styleClass="button" />
+    </VBox>
+
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+</VBox>

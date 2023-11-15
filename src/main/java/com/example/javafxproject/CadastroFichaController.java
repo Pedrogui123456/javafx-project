@@ -22,7 +22,7 @@ public class CadastroFichaController {
         System.out.println(data);
 
         FichaDAO fichaDao = new FichaDAO();
-        Ficha ficha = fichaDao.create(null, 0);
+        Ficha ficha = fichaDao.create(data, quantidade);
 
         System.out.println(ficha.getId());
         System.out.println(ficha.getQuantidade());
