@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+
+<VBox alignment="CENTER_LEFT" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.javafxproject.PedidoController">
+
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <VBox alignment="CENTER" spacing="10.0">
+        <Label text="Bem-vindo(a) à plataforma de gerenciamento comercial do IFSP" styleClass="formTitle" />
+        <Label text="Realize seu pedido selecionando os produtos desejados:"  />
+    </VBox>
+
+    <ListView fx:id="produtoListView" prefHeight="150.0" prefWidth="200.0" />
+
+    <VBox alignment="CENTER_RIGHT" spacing="20.0">
+        <Button text="Adicionar ao Pedido" onAction="#adicionarAoPedido" />
+    </VBox>
+
+    <HBox alignment="CENTER" spacing="10.0">
+        <Label text="Produtos no Pedido:" />
+        <Label fx:id="lblProdutosNoPedido" />
+    </HBox>
+
+    <VBox alignment="CENTER_RIGHT" spacing="20.0">
+        <Button text="Finalizar Pedido" onAction="#finalizarPedido" />
+    </VBox>
+
+    <stylesheets>
+        <URL value="@style.css" />
+    </stylesheets>
+
+</VBox>

@@ -16,10 +16,9 @@ fx:controller="com.example.javafxproject.PrincipalController">
    <Button text="Cadastro Funcionario" onAction="#onActionCadastrarFuncionario" />
    <Button text="Cadastro Produto" onAction="#onActionCadastrarProduto" />
    <Button text="Cadastro Ficha" onAction="#onActionCadastrarFicha" />
-   <Button text="Cardapio" onAction="#onActionCardapio" />
-   <Button text="Menu Produto" onAction="#onActionMenuProduto" />
-   <Button text="Realizar Pedido" onAction="#onActionRealizarPedido" />
    <Button text="Mudança Preço" onAction="#onActionMudancaPreco" />
+   <Button text="Pedido" onAction="#onActionPedido" />
+ 
 
 
    

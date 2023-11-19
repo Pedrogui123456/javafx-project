@@ -3,15 +3,11 @@ com\example\javafxproject\PrincipalController.class
 com\example\javafxproject\DAO\ClienteDAO.class
 com\example\javafxproject\MudancaPrecoController.class
 com\example\javafxproject\DAO\Produto.class
-com\example\javafxproject\RealizarPedidoController.class
-com\example\javafxproject\DAO\ItemCardapioDAO.class
 com\example\javafxproject\DAO\FuncionarioDAO.class
 com\example\javafxproject\DAO\Ficha.class
-com\example\javafxproject\RealizarPedidoController$ItemPedido.class
 com\example\javafxproject\DAO\Conexao.class
 com\example\javafxproject\DAO\FichaDAO.class
 com\example\javafxproject\DAO\Funcionario.class
-com\example\javafxproject\DAO\ItemCardapio.class
 com\example\javafxproject\DAO\ProdutoDAO.class
 com\example\javafxproject\DAO\MudancaPreco.class
 com\example\javafxproject\DAO\MudancaPrecoDAO.class
